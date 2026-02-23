@@ -1,11 +1,14 @@
 import telebot
-import os
 import time
 
-# Токен берется из переменных Railway
-TOKEN = "8434550406:AAFXbe7dyo6YlgLlydMnI6bK_hmuqiOBjJw"  # ВАШ ПОЛНЫЙ ТОКЕН
+# Токен
+TOKEN = "8434550406:AAFXbe7dyo6Y1gL1ydMnI6bK_h"
 
 bot = telebot.TeleBot(TOKEN)
+
+# Отключаем вебхук
+bot.remove_webhook()
+time.sleep(1)
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -31,7 +34,6 @@ def start(message):
 def callback(call):
     chat = call.message.chat.id
     
-    # ЗДЕСЬ ВСТАВЬТЕ СВОИ РЕКВИЗИТЫ (измените текст на свои данные)
     if call.data == "rub":
         bot.send_message(chat, "Рубли: карта Сбербанк 1234 5678 9012 3456")
     elif call.data == "paypal":
