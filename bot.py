@@ -2,7 +2,7 @@ import telebot
 import time
 
 # Токен
-TOKEN = "8434550406:AAFXbe7dyo6Y1gL1ydMnI6bK_h"
+TOKEN = "8434550406:AAFXbe7dyo6YlgLlydMnI6bK_hmuqiOBjJw"
 
 bot = telebot.TeleBot(TOKEN)
 
