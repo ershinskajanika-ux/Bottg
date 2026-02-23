@@ -3,7 +3,7 @@ import os
 import time
 
 # Токен берется из переменных Railway
-TOKEN = os.environ.get('TOKEN')
+TOKEN = "8434550406:AAFXb..."  # ВАШ ПОЛНЫЙ ТОКЕН
 
 bot = telebot.TeleBot(TOKEN)
 
